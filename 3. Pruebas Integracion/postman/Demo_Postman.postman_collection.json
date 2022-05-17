@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "aef0b081-b6d0-43a2-b3c4-5baf9f0b83f0",
+		"name": "Demo_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get woeID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Valid woeid\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].woeid>0);\r",
+							"    pm.collectionVariables.set('woeid', jsonData[0].woeid);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{environmentHost}}/api/location/search/?query=Madrid",
+					"protocol": "https",
+					"host": [
+						"{{environmentHost}}"
+					],
+					"path": [
+						"api",
+						"location",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "Madrid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get weather",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.test(\"Valid weather prediction\", function () {\r",
+							"    pm.expect(jsonData.consolidated_weather != null && jsonData.consolidated_weather.length>0);\r",
+							"});\r",
+							"var maxTempNode = jsonData.consolidated_weather.reduce(function(prev, current) {\r",
+							"    if (+current.max_temp > +prev.max_temp) {\r",
+							"        return current;\r",
+							"    } else {\r",
+							"        return prev;\r",
+							"    }\r",
+							"});\r",
+							"console.log('Maxima temperatura para ciudad ' + jsonData.title + ': ' + maxTempNode.max_temp + 'º el dia ' + maxTempNode.applicable_date );"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{environmentHost}}/api/location/{{woeid}}",
+					"protocol": "https",
+					"host": [
+						"{{environmentHost}}"
+					],
+					"path": [
+						"api",
+						"location",
+						"{{woeid}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.collectionVariables.set('cityName', pm.iterationData.get(\"name\"));"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "woeid",
+			"value": ""
+		},
+		{
+			"key": "cityName",
+			"value": ""
+		}
+	]
+}

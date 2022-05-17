@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Madrid",
+		"description": "municipio y ciudad de España. La localidad, con categoría histórica de villa, es la capital del Estado​ y de la Comunidad de Madrid",
+		"population": 6779888
+	},
+	{
+		"name": "Barcelona",
+		"description": "ciudad española, capital de la comunidad autónoma de Cataluña, de la provincia homónima y de la comarca del Barcelonés",
+		"population": 4895876
+	},
+	{
+		"name": "London",
+		"description": "es la capital y mayor ciudad de Inglaterra y del Reino Unido.​ Situada a orillas del río Támesis, Londres es un importante asentamiento humano desde que fue fundada por los romanos con el nombre de Londinium hace casi dos milenios",
+		"population": 8961989
+	},
+	{
+		"name": "Paris",
+		"description": "capital de Francia y su ciudad más poblada. Capital de la región de Isla de Francia (o Región Parisina), constituye el único departamento unicomunal del país",
+		"population": 12292895
+	},
+	{
+		"name": "Prague",
+		"description": "capital de la República Checa y de la región de Bohemia. Situada a orillas del río Moldava, es la ciudad más poblada del país y la séptima de Europa Central. Su belleza y patrimonio histórico la convierten en una de las veinte ciudades más visitadas del mundo",
+		"population": 2300000
+	},
+	{
+		"name": "Berlin",
+		"description": "capital de Alemania y uno de los dieciséis estados federados alemanes. Se localiza al noreste de Alemania",
+		"population": 3769495
+	},
+	{
+		"name": "Munich",
+		"description": "capital del estado federado de Baviera​ y la tercera ciudad de Alemania por número de habitantes, y la 11ª de la Unión Europea",
+		"population": 1562096
+	},
+	{
+		"name": "Vienna",
+		"description": "ciudad austriaca situada a orillas del Danubio, en el valle de los Bosques de Viena, al pie de las primeras estribaciones de los Alpes. Es la capital y ciudad principal del país, además de uno de sus nueve estados federados (Bundesland Wien)",
+		"population": 2680667
+	}
+]
