@@ -1,0 +1,25 @@
+{
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "chromeWebSecurity": false,
+  "video": true,
+  "defaultCommandTimeout": 20000,
+  "retries": {
+      "runMode": 1,
+      "openMode": 0
+  },
+  "reporter": "cypress-multi-reporters",  
+  "reporterOptions": {  
+      "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",  
+      "cypressMochawesomeReporterReporterOptions": {  
+          "reportDir": "cypress/reports",  
+          "charts": true,  
+          "reportPageTitle": "Widgets E2E Tests",  
+          "embeddedScreenshots": true,  
+          "inlineAssets": true  
+      },  
+      "mochaJunitReporterReporterOptions": {  
+          "mochaFile": "cypress/reports/junit/junitreport.xml"  
+      }  
+  }
+}

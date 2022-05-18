@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>es.atam</groupId>
+	<artifactId>demo-selenium-webdriver</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>demo-selenium-webdriver</name>
+
+	<organization>
+		<name>ATAM</name>
+		<url>www.atam.es</url>
+	</organization>
+
+	<!-- List the core committers -->
+	<developers>
+		<developer>
+			<id>jorge.merino</id>
+			<name>Jorge Merino Escribano</name>
+			<email>jorge.merino@panel.es</email>
+			<organization>Panel</organization>
+			<organizationUrl>http://www.panel.es</organizationUrl>
+			<roles>
+				<role>QA</role>
+			</roles>
+			<timezone>1</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<build.compiler>1.8</build.compiler>
+		<skip.integration.tests>false</skip.integration.tests>
+		<skip.unit.tests>true</skip.unit.tests>
+	</properties>
+
+	<!-- Artifacts repository -->
+	<dependencies>
+		<dependency>
+    		<groupId>org.testng</groupId>
+    		<artifactId>testng</artifactId>
+    		<version>7.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+	</dependencies>
+
+</project>

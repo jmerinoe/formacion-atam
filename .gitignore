@@ -1,0 +1,9 @@
+*.classpath
+*.project
+3. Pruebas Integracion/rest-assured/target/
+3. Pruebas Integracion/rest-assured/test-output/
+3. Pruebas Integracion/rest-assured/.settings/
+4.1. Pruebas E2E/cypress/node_modules/
+4.1. Pruebas E2E/selenium-webdriver/.settings/
+4.1. Pruebas E2E/selenium-webdriver/target/
+4.1. Pruebas E2E/selenium-webdriver/test-output/
