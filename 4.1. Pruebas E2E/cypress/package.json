@@ -2,7 +2,8 @@
   "name": "demo-atam",
   "version": "0.0.0",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "private": true,
   "dependencies": {

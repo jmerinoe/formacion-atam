@@ -7,3 +7,7 @@
 4.1. Pruebas E2E/selenium-webdriver/.settings/
 4.1. Pruebas E2E/selenium-webdriver/target/
 4.1. Pruebas E2E/selenium-webdriver/test-output/
+4.1. Pruebas E2E/cypress/cypress/reports/
+4.1. Pruebas E2E/cypress/cypress/screenshots/
+4.1. Pruebas E2E/cypress/cypress/videos/
+4.2 Pruebas Rendimiento/JMeter/reporte/

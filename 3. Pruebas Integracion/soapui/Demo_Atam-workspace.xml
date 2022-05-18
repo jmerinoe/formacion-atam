@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-workspace name="Demo_Atam" soapui-version="5.7.0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
-  <con:project name="Demo_SoapUI">D:/CEST/PROYECTOS/ATAM/soapui/soapui-project.xml</con:project>
+  <con:project name="Demo_SoapUI">D:/CEST/PROYECTOS/ATAM/3. Pruebas Integracion/soapui/soapui-project.xml</con:project>
 </con:soapui-workspace>

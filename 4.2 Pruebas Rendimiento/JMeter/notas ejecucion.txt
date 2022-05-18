@@ -1,0 +1,2 @@
+Ejecucion proyecto: jmeter -n -t pokemon.jmx -l testResult.jtl
+Generacion reporte de JTL: jmeter -g testResult.jtl -o reporte

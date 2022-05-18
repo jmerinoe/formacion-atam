@@ -37,7 +37,7 @@ context('Actions', () => {
       cy.loadMoreNewsRecursive();
     });
 
-    it.only('.ATAM_REGTC04 - Interceptando peticion noticias', () => {
+    it('.ATAM_REGTC04 - Interceptando peticion noticias', () => {
       cy.closeCookiesBanner();
       cy.loadMoreNews();
     });
