@@ -16,6 +16,7 @@ export const requests = new Counter('http_reqs');
 // target is the number of VUs you are aiming for
 
 export const options = {
+  /*
   ext: {
         loadimpact: {
           projectID: 3583318,
@@ -23,19 +24,15 @@ export const options = {
           name: "PokeApi Test"
         }
   },
+  */
   stages: [
-    { target: 50, duration: '1m' },
-    /*
+    { target: 10, duration: '1m' },
     { target: 20, duration: '30s' },
     { target: 30, duration: '30s' },
-    { target: 50, duration: '30s' },
-    { target: 75, duration: '30s' },
-    { target: 100, duration: '30s' },
-    { target: 50, duration: '30s' },
+    { target: 40, duration: '30s' },
     { target: 30, duration: '30s' },
     { target: 20, duration: '30s' },
-    { target: 10, duration: '30s' },
-    */
+    { target: 10, duration: '30s' }
   ],
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
